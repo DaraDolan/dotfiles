@@ -44,3 +44,5 @@
     command: "sudo chsh -s $(which zsh)"
   - description: Compiling antibody bundles
     command: "sh zsh/bundles_compile"
+  - description: Installing tmux plugin manager
+    command: "git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm"
