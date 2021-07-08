@@ -1,0 +1,48 @@
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+      \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.config/nvim/plugged')
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'scrooloose/nerdtree'
+Plug 'Raimondi/delimitMate'
+Plug 'Yggdroot/indentLine'
+
+Plug 'ekalinin/Dockerfile.vim'
+
+Plug 'airblade/vim-gitgutter'
+Plug 'jeffkreeftmeijer/neovim-sensible'
+
+Plug 'rhysd/vim-crystal'
+
+call plug#end()
+
+
+set noerrorbells                " No beeps
+set number                      " Show line numbers
+set backspace=indent,eol,start  " Makes backspace key more powerful.
+set showcmd                     " Show me what I'm typing
+set showmode                    " Show current mode.
+
+set autoread
+set ignorecase
+
+let g:indentLine_leadingSpacChar='·'
+let g:indentLine_leadingSpaceEnabled='1'
+
+
+filetype plugin indent on
+syntax on
+set hidden
+:imap jj <ESC>
+
+" Use the space key as leader.
+let mapleader = "\<Space>"
+" Split edit your vimrc. Type space, v, r in sequence to trigger
+nmap <leader>vr :sp $MYVIMRC<cr>
+" Source (reload) your vimrc. Type space, s, o in sequence to trigger
+nmap <leader>so :source $MYVIMRC<cr>
+" Exit and save the buffer
+:imap <C-s> <esc>:w<cr>
