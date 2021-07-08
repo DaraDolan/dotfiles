@@ -1,0 +1,40 @@
+- shell:
+  - description: Validating sudo credentials
+    command: "sudo --validate"
+- clean: ['~']
+
+- link:
+    ~/.bashrc: bashrc
+    ~/.gitconfig: gitconfig
+    ~/.vimrc: vimrc
+    ~/.zshrc: zsh/zshrc
+    ~/.config/nvim/init.vim: vim/init.vim
+    ~/.config/starship.toml: zsh/starship.toml
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/bin:
+        path: bin/
+        create: true
+- create:
+  - ~/Code
+    ~/.config/nvim/undo
+- shell:
+  - description: Installing brew
+    command: "[ -x \"$(which brew)\" ] || arch -x86_64 /usr/bin/ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\""
+  - description: Updating brew
+    command: "arch -x86_64 brew update"
+  - description: Installing brew bundler
+    command: "arch -x86_64 brew tap homebrew/bundle"
+  - description: Installing brewfile bundle
+    command: "arch -x86_64 brew bundle"
+    stdout: true
+    stderr: true
+  - description: Adding zsh to list of acceptable shells
+    command: "[[ \"$(ag $(which zsh) /etc/shells)\" ]] || sudo sh -c \"echo $(which zsh) >> /etc/shells\""
+  - description: Making zsh the default shell
+    command: "sudo chsh -s $(which zsh)"
+  - description: Compiling antibody bundles
+    command: "sh zsh/bundles_compile"
+  - description: Installing vim-plug
+    command: "[ -f ~/.vim/autoload/plug.vim ] || curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+  - description: Installing vim plugins
+    command: "vim +PlugInstall +qa"

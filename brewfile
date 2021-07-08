@@ -1,0 +1,22 @@
+# Taps
+tap 'homebrew/cask'
+tap 'homebrew/bundle'
+
+# 
+brew 'bash'
+brew 'zsh'
+brew 'git'
+brew 'vim'
+brew 'neovim', args: ['HEAD']
+brew 'fzf', args: ['HEAD']
+brew 'tree'
+brew 'wget'
+brew 'bat'
+brew 'awk'
+brew 'diff-so-fancy'
+brew 'tmux'
+brew 'tmuxinator'
+brew 'the_silver_searcher'
+brew 'antibody'
+brew 'starship'
+brew 'pyenv'

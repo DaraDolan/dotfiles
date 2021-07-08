@@ -1,0 +1,15 @@
+djui/alias-tips
+robbyrussell/oh-my-zsh
+robbyrussell/oh-my-zsh path:plugins/git
+robbyrussell/oh-my-zsh path:plugins/tmux
+robbyrussell/oh-my-zsh path:plugins/tmuxinator
+robbyrussell/oh-my-zsh path:plugins/laravel
+zsh-users/zsh-syntax-highlighting
+rupa/z
+molovo/tipz
+
+# Source Local Configs
+~/.dotfiles/zsh/local
+
+# Source Fzf (This needs to happen after vi-mode bindings to give precedence to fzf bindings)
+~/.dotfiles/zsh/local/fzf.zsh

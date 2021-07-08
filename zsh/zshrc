@@ -1,0 +1,72 @@
+# ------------------------------------------------------------------------------
+# Zshrc
+# ------------------------------------------------------------------------------
+# This file sets up my basic zsh environment.  Here I set a few defaults,
+# paths, and source the rest of the config files as necessary.  Most
+# plugins are installed and sourced via brew or antibody, with
+# more elaborate configuration in the /local directory.
+
+
+# ------------------------------------------------------------------------------
+# Paths
+# ------------------------------------------------------------------------------
+
+export PATH=${PATH}:/bin
+export PATH=${PATH}:/usr/bin
+export PATH=${PATH}:/usr/local/bin
+export PATH=${PATH}:/sbin
+export PATH=${PATH}:/usr/sbin
+export PATH=${PATH}:/usr/local/sbin
+export PATH=${PATH}:/usr/local/git/bin
+export PATH=${PATH}:~/.composer/vendor/bin
+export PATH=${PATH}:vendor/bin
+export PATH=${PATH}:/home/vagrant/bin
+export PATH=${PATH}:~/.dotfiles/bin
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+# ------------------------------------------------------------------------------
+# Sourcing
+# ------------------------------------------------------------------------------
+
+# Disable completion directory permission verification
+ZSH_DISABLE_COMPFIX=true
+
+# Set oh-my-zsh path
+SZH=$(antibody path robbyrussell/oh-my-zsh)
+
+# Source compiled antibody bundles and configs
+[ -f ~/.dotfiles/zsh/bundles.sh ] && source ~/.dotfiles/zsh/bundles.sh
+
+# ------------------------------------------------------------------------------
+# Starship Prompt
+# ------------------------------------------------------------------------------
+# -eval "$(starship init zsh)"
+
+if command -v nvim &> /dev/null
+then
+  export EDITOR=nvim
+else
+  export EDITOR=vim
+fi
+
+# ------------------------------------------------------------------------------
+# Helpers
+# ------------------------------------------------------------------------------
+
+# Compile bundles and source zshrc
+sz() {
+  sh ~/.dotfiles/zsh/bundles_compile
+  source ~/.zshrc
+}
+
+# Run dotfiles installer
+alias dotinstall="~/.dotfiles/install"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+. /Users/daradolan/.pyenv/versions/3.9.2/lib/python3.9/site-packages/powerline/bindings/zsh/powerline.zsh
