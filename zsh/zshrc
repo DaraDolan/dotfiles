@@ -45,13 +45,6 @@ SZH=$(antibody path robbyrussell/oh-my-zsh)
 # Source compiled antibody bundles and configs
 [ -f ~/.dotfiles/zsh/bundles.sh ] && source ~/.dotfiles/zsh/bundles.sh
 
-if command -v nvim &> /dev/null
-then
-  export EDITOR=nvim
-else
-  export EDITOR=vim
-fi
-
 # ------------------------------------------------------------------------------
 # Helpers
 # ------------------------------------------------------------------------------
@@ -60,6 +53,7 @@ fi
 sz() {
   sh ~/.dotfiles/zsh/bundles_compile
   source ~/.zshrc
+  echo 'Sourced zshrc'
 }
 
 # Run dotfiles installer
