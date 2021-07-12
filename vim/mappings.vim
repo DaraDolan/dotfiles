@@ -1,6 +1,10 @@
 " Leader
 let mapleader = ' '
-:imap jj <ESC>
+imap jj<ESC>
+
+" Write
+nmap <Leader>w :w<CR>
+imap jw <Esc>:w<CR>
 
 " Mappings: sourcery
 function! SourceryMappings()

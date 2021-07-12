@@ -8,6 +8,9 @@ Plug 'jesseleite/vim-sourcery'
 " Dump debug all the vim things
 Plug 'jesseleite/vim-raymond'
  
+" Human readable vim startup time profiling
+Plug 'tweekmonster/startuptime.vim', {'on': 'StartupTime'}
+
 Plug 'tpope/vim-sensible'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -23,7 +26,6 @@ Plug 'stsewd/fzf-checkout.vim'
 " Add an AllFiles variation that ignores .gitignore files
 " command! -bang -nargs=? -complete=dir AllFiles
 "     \ call fzf#run(fzf#wrap('allfiles', fzf#vim#with_preview({ 'dir': <q-args>, 'sink': 'e', 'source': 'rg --files --hidden --no-ignore' }), <bang>0))
-echo "Mapping search options"
 
 nmap <leader>f :Files<cr>
 nmap <leader>F :AllFiles<cr>
