@@ -27,6 +27,14 @@ nnoremap <Leader><Leader>v <Cmd>Telescope sourcery<CR>
 nnoremap <Leader><Leader>d <Cmd>Telescope dotfiles<CR>
 nnoremap <Leader><Leader>t <Cmd>Telescope<CR>
 
+" Git
+" Mappings: fugitive
+nmap <Leader>G :Gedit :<CR>
+
+" Github
+" Mappings: rhubarb
+nmap <Leader><Leader>go :Gbrowse<CR>
+
 " Mappings: sourcery
 function! SourceryMappings()
   nmap <buffer> <leader>gp <Plug>SourceryGoToRelatedPluginDefinition

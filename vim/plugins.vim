@@ -26,6 +26,15 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'fhill2/telescope-ultisnips.nvim'
 
+" Git commands
+Plug 'tpope/vim-fugitive'
+
+" Github commands
+Plug 'tpope/vim-rhubarb'
+
+" Git gutters
+Plug 'mhinz/vim-signify'
+
 Plug 'tpope/vim-sensible'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
