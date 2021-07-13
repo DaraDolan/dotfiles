@@ -38,6 +38,10 @@
     command: "pip3 install -r pipfile"
     stdout: true
     stderr: true
+  - description: Installing lookatme for presentations
+    command: "pip install lookatme"
+    stdout: true
+    stderr: true
   - description: Install python3 plugins for neovim
     command: "python3 -m pip install --user --upgrade pynvim"
   - description: Installing vim-plug
