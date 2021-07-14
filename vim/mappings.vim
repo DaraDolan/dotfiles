@@ -56,3 +56,7 @@ function! SourceryMappings()
   nnoremap <buffer><nowait> <leader>pu <Cmd>PlugUpdate<CR>
   nnoremap <buffer><nowait> <leader>pc <Cmd>PlugClean<CR>
 endfunction
+
+" Quickly append semicolon or comma
+imap ;; <Esc>A;<Esc>
+imap ,, <Esc>A,<Esc>
