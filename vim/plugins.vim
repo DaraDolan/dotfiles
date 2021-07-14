@@ -35,6 +35,10 @@ Plug 'tpope/vim-rhubarb'
 " Git gutters
 Plug 'mhinz/vim-signify'
 
+" Plugins for native lsp
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
+
 Plug 'tpope/vim-sensible'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
