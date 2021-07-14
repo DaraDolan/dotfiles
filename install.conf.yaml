@@ -48,3 +48,5 @@
     command: "[ -f ~/.vim/autoload/plug.vim ] || curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
   - description: Installing vim plugins
     command: "vim +PlugInstall +qa"
+  - description: Install pyright lsp server
+    command: "npm i -g pyright"
