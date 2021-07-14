@@ -6,6 +6,14 @@ let mapleader = ' '
 nmap <Leader>w :w<CR>
 imap jw <Esc>:w<CR>
 
+" Search down into subfolders
+" Provides tab completion for all file-related tasks
+set path+=**
+
+" Display all matching files when tab complete
+set wildmenu
+
+
 " Telescope fuzzy finders
 " Mappings: telescope
 nnoremap <Leader>f <Cmd>Telescope git_files<CR>
