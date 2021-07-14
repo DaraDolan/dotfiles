@@ -44,3 +44,5 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'stsewd/fzf-checkout.vim'
 
+" Snippets
+Plug 'SirVer/ultisnips'
