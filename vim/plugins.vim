@@ -5,6 +5,11 @@
 " Source all the vim configs
 Plug 'jesseleite/vim-sourcery'
 
+" Nord color scheme
+Plug 'arcticicestudio/nord-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 " Dump debug all the vim things
 Plug 'jesseleite/vim-raymond'
  
@@ -44,5 +49,12 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'stsewd/fzf-checkout.vim'
 
+" Allow fancy commenting functionality
+Plug 'preservim/nerdcommenter'
+
 " Snippets
 Plug 'SirVer/ultisnips'
+Plug 'chrisyue/my-snips' 
+
+" Config: ultisnips
+let g:UltiSnipsSnippetsDir = "~/.vim/UltiSnips"

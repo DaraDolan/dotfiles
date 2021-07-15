@@ -13,6 +13,7 @@
     ~/.gitconfig: gitconfig
     ~/.zshrc: zsh/zshrc
     ~/.config/nvim/init.vim: vim/init.vim
+    ~/.config/nvim/ultisnips: vim/snippets
     ~/.tmux.conf: tmux/tmux.conf
 - create:
   - ~/Code

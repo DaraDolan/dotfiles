@@ -24,6 +24,8 @@ set nowrap
 set autoindent
 set smartindent
 
+filetype plugin on
+
 " Neovim and/or Vim specific settings
 if has('nvim')
   set shada=!,'250,<50,s10,h
