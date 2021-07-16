@@ -78,10 +78,9 @@ inoremap <silent><expr> <C-f> compe#scroll({ 'delta': +4 })
 inoremap <silent><expr> <C-d> compe#scroll({ 'delta': -4 })
 
 "
-" Plugins
+" Navigation
 "
-nnoremap <buffer><nowait> <leader>pi <cmd>PlugInstall<cr>
-nnoremap <buffer><nowait> <leader>pu <cmd>PlugUpdate<cr>
-
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+nnoremap <silent> <leader>j :m .+1<cr>==
+nnoremap <silent> <leader>k :m .-2<cr>==
+inoremap <silent> <leader>k <esc>:m .-2<cr>==gi
+inoremap <silent> <leader>j <esc>:m .+1<cr>==gi
