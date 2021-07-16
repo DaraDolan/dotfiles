@@ -15,6 +15,7 @@
     ~/.config/nvim/init.vim: vim/init.vim
     ~/.config/nvim/ultisnips: vim/snippets
     ~/.tmux.conf: tmux/tmux.conf
+    ~/.composer/composer.json: composer/composer.json
 - create:
   - ~/Code
     ~/.config/nvim/undo
@@ -49,5 +50,7 @@
     command: "[ -f ~/.vim/autoload/plug.vim ] || curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
   - description: Installing vim plugins
     command: "vim +PlugInstall +qa"
+  - description: Installing/updating global composer dependencies
+    command: "sh composer/global_update"
   - description: Install pyright lsp server
     command: "npm i -g pyright"
