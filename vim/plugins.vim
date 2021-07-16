@@ -44,10 +44,8 @@ Plug 'mhinz/vim-signify'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 
-Plug 'tpope/vim-sensible'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'stsewd/fzf-checkout.vim'
 
 " Allow fancy commenting functionality
 Plug 'preservim/nerdcommenter'
