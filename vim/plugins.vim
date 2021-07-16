@@ -12,7 +12,6 @@ Plug 'vim-airline/vim-airline-themes'
 
 " Dump debug all the vim things
 Plug 'jesseleite/vim-raymond'
- 
 " Human readable vim startup time profiling
 Plug 'tweekmonster/startuptime.vim', {'on': 'StartupTime'}
 
@@ -52,7 +51,10 @@ Plug 'preservim/nerdcommenter'
 
 " Snippets
 Plug 'SirVer/ultisnips'
-Plug 'chrisyue/my-snips' 
+Plug 'chrisyue/my-snips'
+
+" PHP refactoring and introspection
+Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o'}
 
 " Config: ultisnips
 let g:UltiSnipsSnippetsDir = "~/.vim/UltiSnips"

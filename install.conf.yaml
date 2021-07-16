@@ -54,3 +54,5 @@
     command: "sh composer/global_update"
   - description: Install pyright lsp server
     command: "npm i -g pyright"
+  - description: Install Intelephense
+    command: "npm i intelephense -g"
