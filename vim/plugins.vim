@@ -54,7 +54,7 @@ Plug 'SirVer/ultisnips'
 Plug 'chrisyue/my-snips'
 
 " PHP refactoring and introspection
-Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o'}
+" Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o'}
 
 " Config: ultisnips
 let g:UltiSnipsSnippetsDir = "~/.vim/UltiSnips"
