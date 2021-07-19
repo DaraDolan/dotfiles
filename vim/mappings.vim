@@ -93,5 +93,6 @@ nnoremap <silent> <Leader>ie <Cmd>lua vim.lsp.diagnostic.show_line_diagnostics()
 "
 nnoremap <silent> <leader>j :m .+1<cr>==
 nnoremap <silent> <leader>k :m .-2<cr>==
-inoremap <silent> <leader>k <esc>:m .-2<cr>==gi
-inoremap <silent> <leader>j <esc>:m .+1<cr>==gi
+
+" inoremap <silent> <leader>k <esc>:m .-2<cr>==gi
+" inoremap <silent> <leader>j <esc>:m .+1<cr>==gi
