@@ -8,7 +8,8 @@
 		"statamic/cli": "^2.0",
 		"tightenco/takeout": "^1.8",
 		"permafrost-dev/ray-cli": "^1.12",
-		"phpactor/phpactor": "^0.17"
+		"phpactor/phpactor": "^0.17",
+		"tightenco/lambo": "^1.0"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true

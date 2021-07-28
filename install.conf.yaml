@@ -16,6 +16,8 @@
     ~/.config/nvim/ultisnips: vim/snippets
     ~/.tmux.conf: tmux/tmux.conf
     ~/.composer/composer.json: composer/composer.json
+    ~/.lambo/config: lambo/config
+    ~/.lambo/after: lambo/after
 - create:
   - ~/Code
     ~/.config/nvim/undo
