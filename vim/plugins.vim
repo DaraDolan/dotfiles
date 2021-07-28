@@ -33,6 +33,9 @@ Plug 'fhill2/telescope-ultisnips.nvim'
 " Git commands
 Plug 'tpope/vim-fugitive'
 
+" Moving between buffers, args etc
+Plug 'tpope/vim-unimpaired'
+
 " Github commands
 Plug 'tpope/vim-rhubarb'
 
@@ -52,6 +55,7 @@ Plug 'preservim/nerdcommenter'
 " Snippets
 Plug 'SirVer/ultisnips'
 Plug 'chrisyue/my-snips'
+Plug 'honza/vim-snippets'
 
 " PHP refactoring and introspection
 " Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o'}
