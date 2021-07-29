@@ -36,8 +36,14 @@ Plug 'tpope/vim-fugitive'
 " Moving between buffers, args etc
 Plug 'tpope/vim-unimpaired'
 
+" Surround commands
+Plug 'tpope/vim-surround'
+
 " Github commands
 Plug 'tpope/vim-rhubarb'
+"
+" Github commands
+Plug 'tpope/vim-projectionist'
 
 " Git gutters
 Plug 'mhinz/vim-signify'
