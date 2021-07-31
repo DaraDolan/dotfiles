@@ -8,6 +8,7 @@ zsh-users/zsh-syntax-highlighting
 rupa/z
 molovo/tipz
 romkatv/powerlevel10k
+jessarcher/zsh-artisan
 
 # Source Local Configs
 ~/.dotfiles/zsh/local
