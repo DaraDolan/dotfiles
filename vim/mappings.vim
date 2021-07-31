@@ -90,8 +90,10 @@ nnoremap <silent> <C-p> <Cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 nnoremap <silent> <Leader>ie <Cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
 
 "
-" Navigation
+" Moving text
 "
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
 nnoremap <silent> <leader>j :m .+1<cr>==
 nnoremap <silent> <leader>k :m .-2<cr>==
 inoremap <C-k> <esc>:m .-2<cr>==gi
