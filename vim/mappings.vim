@@ -1,5 +1,6 @@
 " Leader
 let mapleader = ' '
+let maplocalleader = ','
 inoremap jj <ESC>
 
 
