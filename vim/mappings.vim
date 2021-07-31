@@ -1,10 +1,11 @@
 " Leader
 let mapleader = ' '
-:imap jj <ESC>
+inoremap jj <ESC>
+
 
 " Write
-nmap <Leader>w :w<CR>
-imap jw <Esc>:w<CR>
+nnoremap <Leader>w :w<CR>
+inoremap jw <Esc>:w<CR>
 
 " Search down into subfolders
 " Provides tab completion for all file-related tasks
