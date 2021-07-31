@@ -27,7 +27,7 @@ lspconfig.sumneko_lua.setup {
 }
 
 -- Vimscript / VimL
-lspconfig.vimls.setup { }
+-- lspconfig.vimls.setup { }
 
 -- PHP
 lspconfig.intelephense.setup { }
