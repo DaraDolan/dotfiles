@@ -94,5 +94,29 @@ nnoremap <silent> <Leader>ie <Cmd>lua vim.lsp.diagnostic.show_line_diagnostics()
 "
 nnoremap <silent> <leader>j :m .+1<cr>==
 nnoremap <silent> <leader>k :m .-2<cr>==
-" inoremap <silent> <leader>k <esc>:m .-2<cr>==gi
-" inoremap <silent> <leader>j <esc>:m .+1<cr>==gi
+inoremap <C-k> <esc>:m .-2<cr>==gi
+inoremap <C-j> <esc>:m .+1<cr>==gi
+
+" Helpful editing mappings
+" Uppercase the work in insert and return to insert mode
+inoremap <c-u> <esc>viwUA
+" Silly little mappings that put quotes around a word
+nnoremap <leader>" viw<esc>a"<esc>bi"<esc>lel
+nnoremap <leader>' viw<esc>a'<esc>bi'<esc>lel
+vnoremap <leader>' <esc>`<i'<esc>`>a'<esc>
+" H and L go to start and end of line respectively
+nnoremap H 0
+nnoremap L $
+nnoremap Y y$
+" Keep the cursor centred while searching etc
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
+" Undo breakpoints - add more if you come accross any good breakpoints
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
+" Jumplist mutations
+nnoremap <expr> k (v:count > 5 ? "m'" . v:count : "") . 'k'
+nnoremap <expr> j (v:count > 5 ? "m'" . v:count : "") . 'j'
