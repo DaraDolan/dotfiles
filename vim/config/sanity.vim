@@ -3,6 +3,7 @@
 " ------------------------------------------------------------------------------
 
 set nobackup
+set number
 set noswapfile
 set autoread
 set confirm
@@ -43,7 +44,6 @@ execute 'set titlestring=vim\ (' . currentProject . ')'
 if has('nvim')
   augroup neovim_terminal
     autocmd!
-    autocmd TermOpen * :set nonumber norelativenumber
     autocmd TermOpen * nnoremap <buffer> <C-c> i<C-c>
   augroup END
 endif
