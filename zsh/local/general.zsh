@@ -4,8 +4,8 @@
 
 alias c="clear"
 alias o="open ."
-# alias rm="trash"
-# alias rf="trash -rf"
+alias rm="trash"
+alias rf="trash -rf"
 alias sizes='du -sh -c *'
 alias os='cd ~/code/php/open-source'
 # Copy pwd to clipboard
