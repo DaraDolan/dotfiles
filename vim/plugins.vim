@@ -63,6 +63,9 @@ Plug 'SirVer/ultisnips'
 Plug 'chrisyue/my-snips'
 Plug 'honza/vim-snippets'
 
+" Testing 
+Plug 'vim-test/vim-test'
+
 " PHP refactoring and introspection
 " Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o'}
 
