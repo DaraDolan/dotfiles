@@ -58,3 +58,5 @@
     command: "npm i -g pyright"
   - description: Install Intelephense
     command: "npm i intelephense -g"
+  - description: Install vim language server
+    command: "npm i vim-language-server -g"
