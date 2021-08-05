@@ -63,7 +63,7 @@ Plug 'SirVer/ultisnips'
 Plug 'chrisyue/my-snips'
 Plug 'honza/vim-snippets'
 
-" Testing 
+" Testing
 Plug 'vim-test/vim-test'
 
 " PHP refactoring and introspection
@@ -71,3 +71,6 @@ Plug 'vim-test/vim-test'
 
 " Config: ultisnips
 let g:UltiSnipsSnippetsDir = "~/.vim/UltiSnips"
+
+" Markdown stuff
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
