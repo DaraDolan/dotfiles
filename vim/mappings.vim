@@ -19,12 +19,12 @@ set wildmenu
 " Telescope fuzzy finders
 " Mappings: telescope
 nnoremap <Leader>f <Cmd>Telescope git_files<CR>
-nnoremap <Leader>F <Cmd>Telescope all_files<CR>
+nnoremap <Leader>F <Cmd>Telescope find_files<CR>
 nnoremap <Leader>b <Cmd>Telescope buffers sort_lastused=true<CR>
 nnoremap <Leader>m <Cmd>Telescope git_status<CR>
 nnoremap <Leader>h <Cmd>Telescope project_history<CR>
 nnoremap <Leader>H <Cmd>Telescope history<CR>
-nnoremap <Leader>/ <Cmd>Telescope live_grep_raw<CR>
+nnoremap <Leader>/ <Cmd>Telescope live_grep<CR>
 
 nnoremap <Leader>t <Cmd>Telescope current_buffer_tags<CR>
 nnoremap <Leader>l <Cmd>Telescope current_buffer_lines<CR>
@@ -66,7 +66,7 @@ imap ,, <Esc>A,<Esc>
 "
 " UltiSnips
 "
-let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsExpandTrigger = '<C+U>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
