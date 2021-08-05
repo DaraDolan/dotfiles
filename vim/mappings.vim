@@ -66,9 +66,9 @@ imap ,, <Esc>A,<Esc>
 "
 " UltiSnips
 "
-let g:UltiSnipsExpandTrigger = '<C+U>'
-let g:UltiSnipsJumpForwardTrigger = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsExpandTrigger = '<F12>'
+let g:UltiSnipsJumpForwardTrigger = '<F12>'
+let g:UltiSnipsJumpBackwardTrigger = '<F12>'
 
 "
 " compe
