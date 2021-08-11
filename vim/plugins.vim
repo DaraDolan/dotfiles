@@ -74,3 +74,6 @@ let g:UltiSnipsSnippetsDir = "~/.vim/UltiSnips"
 
 " Markdown stuff
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+" This should load editorconfig settings for me
+Plug 'editorconfig/editorconfig-vim'
