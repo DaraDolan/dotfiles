@@ -48,6 +48,9 @@ SZH=$(antibody path robbyrussell/oh-my-zsh)
 # ------------------------------------------------------------------------------
 # Helpers
 # ------------------------------------------------------------------------------
+plugins=(
+  aliases
+)
 
 # Compile bundles and source zshrc
 sz() {

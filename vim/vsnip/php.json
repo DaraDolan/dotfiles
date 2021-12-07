@@ -1,0 +1,13 @@
+{
+	"Define a test method": {
+		"prefix": "test",
+		"body": [
+			"/** @test */",
+			"public function ${1:itCanDoSomething}()",
+			"{",
+			"\t${0:# code...}",
+			"}"
+		],
+		"description": "Creates a test method"
+	}
+}

@@ -76,6 +76,7 @@ let g:UltiSnipsJumpBackwardTrigger = '<F12>'
 inoremap <silent><expr> <C-Space> compe#complete()
 inoremap <silent><expr> <CR> compe#confirm('<CR>')
 inoremap <silent><expr> <C-e> compe#close('<C-e>')
+" the following scroll the help window not the suggestions
 inoremap <silent><expr> <C-f> compe#scroll({ 'delta': +4 })
 inoremap <silent><expr> <C-d> compe#scroll({ 'delta': -4 })
 
@@ -89,6 +90,13 @@ nnoremap <silent> <C-k> <Cmd>lua vim.lsp.buf.signature_help()<CR>
 nnoremap <silent> <C-n> <Cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent> <C-p> <Cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 nnoremap <silent> <Leader>ie <Cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
+
+" Select or cut text to use as $TM_SELECTED_TEXT in the next snippet.
+" See https://github.com/hrsh7th/vim-vsnip/pull/50
+nmap        s   <Plug>(vsnip-select-text)
+xmap        s   <Plug>(vsnip-select-text)
+nmap        S   <Plug>(vsnip-cut-text)
+xmap        S   <Plug>(vsnip-cut-text)
 
 "
 " Moving text
@@ -123,3 +131,8 @@ inoremap ? ?<c-g>u
 " Jumplist mutations
 nnoremap <expr> k (v:count > 5 ? "m'" . v:count : "") . 'k'
 nnoremap <expr> j (v:count > 5 ? "m'" . v:count : "") . 'j'
+" When testing, exit terminal mode to read the test output
+" The regular mapping is hard to type, hence the mapping
+if has('nvim')
+  tmap <C-o> <C-\><C-n>
+endif

@@ -1,0 +1,6 @@
+{
+	"Visual Strikethrough": {
+		"prefix": ["vstrike"],
+		"body": "~~${1:$TM_SELECTED_TEXT}~~"
+	}
+}

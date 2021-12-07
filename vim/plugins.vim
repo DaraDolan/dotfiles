@@ -59,15 +59,22 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'preservim/nerdcommenter'
 
 " Snippets
-Plug 'SirVer/ultisnips'
-Plug 'chrisyue/my-snips'
-Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips'
+" Plug 'chrisyue/my-snips'
+" Plug 'honza/vim-snippets'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
+Plug 'rafamadriz/friendly-snippets'
+Plug 'dansysanalyst/pest-snippets'
+Plug 'h4kst3r/php-awesome-snippets'
+Plug 'neild3r/vscode-php-docblocker'
+Plug 'd3jn/php-auto-namespacer.vim'
 
 " Testing
 Plug 'vim-test/vim-test'
 
 " PHP refactoring and introspection
-" Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o'}
+Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o'}
 
 " Config: ultisnips
 let g:UltiSnipsSnippetsDir = "~/.vim/UltiSnips"

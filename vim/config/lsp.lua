@@ -38,3 +38,5 @@ lspconfig.intelephense.setup { }
  -- Python
 lspconfig.pyright.setup{}
 
+-- Tailwind
+require('lspconfig').tailwindcss.setup { }
